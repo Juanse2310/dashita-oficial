@@ -1,0 +1,1006 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Supermercado One', cursive;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Supermercado One', cursive;
+}
+
+.grid-container {
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: 100vw;
+    grid-template-rows: 150px 50px 150px 150px 150px 25px;
+    overflow: scroll;
+    background-image: url(imagenes/dashita\ fondo.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color:transparent ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    background-size: contain;
+    padding: auto;
+    margin: auto;
+    
+}
+
+.logo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;     
+    align-items: center;
+    justify-items: center;
+    background-image: linear-gradient(to right, black, grey);
+    border-bottom: 5px solid lightblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   
+}
+
+.navegacion {
+    display: flex;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 2px;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    align-content: space-between;
+}
+.navegacionItems {
+    display: inline-block;
+    position: relative;
+    align-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+    
+    
+}
+.navePag{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.navePag:hover{
+    
+    color: rgb(253, 11, 144);
+}
+
+
+footer {
+    background-image: linear-gradient(to right, grey, black);;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    width: 100%;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+}
+
+/*particularidades index*/
+
+.fotoHome {
+    background-color: transparent ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+        
+}
+
+.fotoBolsas{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.secHome {    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.685);    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+}
+
+.textoIndex {
+    padding: 2px 0px 1px 1px;
+    margin: auto;
+    color: black;
+    font-weight: 600;
+
+
+}
+
+/*particularidades dondeestamos*/
+
+.mapa {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+
+}
+
+.secDonde {   
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.685);
+    color: black;
+    font-weight: 600;  
+    
+   
+}
+
+.dondeTitulo{
+    width: 100%;
+    margin: 0 25% 0 25% ;
+
+}
+.detalleVehiculos{
+    width: 100%;
+    margin: 5% 25% 0 25% ;
+
+}
+
+/*particularidades contacto*/
+
+.redes {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.685);
+         
+}
+
+.formularioTitulo {
+    font-size: 18px;
+    color:black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 10px;
+}
+.redesItems {
+    display: inline-flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.redesIcon{
+    font-size: 14px;
+    color:black;
+    display: inline;
+    padding: 5px;
+
+}
+
+.secFormulario {   
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.685);
+   
+}
+
+/*particularidades como comprar*/
+
+.mediosPago {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.685);
+    
+    
+}
+.iconCompras{
+    height: 75px;
+    width: 75px;
+}
+
+.mediosEnvio {   
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.685);   
+    justify-content: center;
+   
+}
+
+/*particularidades tips*/
+
+.menuTips {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.685);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   
+}
+
+.cuerpoTips {   
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.685);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   
+   
+}
+
+/*particularidades talles*/
+
+
+.cuerpoTalles {   
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.685);    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    grid-row-start: 5;
+    grid-row-end: 23; 
+    grid-column-start: 2;
+    grid-column-end: 12;
+   
+   
+}
+
+/*particularidades productos*/
+
+.menuProductos {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.685);
+    border-bottom: 5px solid lightblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+      
+}
+.talles{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 16px;
+    
+    
+}
+.tallesItem{
+    background-color: rgba(128, 128, 128, 0.685);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 8px;
+}
+
+.nomTalles{
+
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.secProductos {   
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.685);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   
+   
+}
+
+
+@media screen and (min-width:600px) {
+    .grid-container{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(24, 25px);
+    }
+
+    header {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        
+                
+    }
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+    }
+    .navegacionItems {
+        display: inline-block;
+        position: relative;
+        align-content: space-between;
+        padding-left: 6px;
+        padding-right: 6px;
+        
+        
+    }
+    .navePag{
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+    .navePag:hover{
+        
+        color: rgb(253, 11, 144);
+    }
+   
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 24;
+        grid-row-end: 25;
+
+    }
+
+/*Mediaquery de Index*/
+
+    .fotoHome {
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+    .fotoBolsas{
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+    .secHome {
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        background-color: rgba(128, 128, 128, 0.685);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    
+    .textoIndex {
+        padding: 2px 0px 1px 1px;
+        margin: auto;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+    
+    
+    }
+
+
+/*Mediaquery de DONDE ESTAMOS*/
+
+    .mapa{
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        
+
+    }
+    .secDonde{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0px;
+        display:block;
+        width: 100%;
+        color: black;
+        font-weight: 600;  
+        justify-content: center;
+        align-content: center;
+
+    }
+  
+
+    .dondeTitulo{
+       width: 100%;
+       margin-top: 60px;
+       margin-bottom: 40px;
+      
+       
+
+    }
+    .detalleVehiculos{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        
+
+    }
+
+/*Mediaquery de contacto*/
+
+.redes {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 22;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.secFormulario {   
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 22; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+  
+
+.formularioTitulo {
+    font-size: 18px;
+    color:black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    
+}
+.redesItems {
+    display: block;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.redesIcon{
+    font-size: 14px;
+    color:black;
+    display: block;
+    padding: 5px;
+
+}
+
+
+/*Mediaquery de como comprar*/
+
+.mediosPago {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 22;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.mediosDe{
+    display: inline-block;
+    width: 100%;
+}
+
+.mediosEnvio {   
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 22; 
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/*Mediaquery de tips*/
+
+.menuTips {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 22;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.cuerpoTips {   
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 22; 
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/*Mediaquery de productos*/
+
+.menuProductos {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 23;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.talles{
+    display: inline;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    align-content: space-between
+}
+
+
+.secProductos {   
+    grid-column-start: 3;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 23; 
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.productos {
+    display: block;
+    width: 100%;
+    justify-items: center;
+    
+}
+
+    
+}
+
+
+@media screen and (min-width:1000px) {
+    .grid-container{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(24, 25px);
+    }
+
+    header {
+        grid-column-start: 12;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+                
+    }
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        display: flex;
+        width: 100%;
+        position: relative;    
+        background-color: grey;
+        border-bottom: 5px solid lightblue;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+
+    }
+    .navegacionItems {
+        display: inline-block;
+        position: relative;
+        align-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        
+        
+    }
+    .navePag{
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        
+    }
+    .navePag:hover{
+        
+        color: rgb(253, 11, 144);
+    }
+    
+    .logo {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        animation-name: latido;
+        animation-iteration-count: infinite;
+        animation-duration: 1.0s;
+        animation-delay: 0.2s;
+    
+    }
+
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 24;
+        grid-row-end: 25;
+
+    }
+
+    /*Mediaquery de index*/
+
+    .fotoHome {
+        display: none;
+ 
+     }
+     .secHome {
+         grid-column-start: 2;
+         grid-column-end: 12;
+         grid-row-start: 6;
+         grid-row-end: 23;
+         background-image: url(imagenes/dashita\ bolsas.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         border-top-left-radius: 15px;
+         border-top-right-radius: 15px;
+         border-bottom-left-radius: 15px;
+         border-bottom-right-radius: 15px;
+         
+     }
+            
+    .textoIndex {
+        padding: 2px 0px 1px 6px;
+        margin: auto;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    
+    
+    }
+
+
+
+    /*Mediaquery de DONDE ESTAMOS*/
+
+    .mapa{
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+
+    }
+    .secDonde{
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 23;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+        
+
+    }
+
+    /*Mediaquery de contacto*/
+
+.redes {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 10;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.secFormulario {   
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 11;
+    grid-row-end: 23; 
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.formularioTitulo {
+    font-size: 18px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    
+}
+.formularioConsulta {
+    display: inline-flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.redesItems {
+    display: inline-flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.redesIcon{
+    font-size: 14px;
+    color:black;
+    display: flex;
+    padding: 5px;
+
+}
+
+/*Mediaquery de como comprar*/
+
+.mediosPago {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 14;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.mediosDe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mediosEnvio {   
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 15;
+    grid-row-end: 23; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/*Mediaquery de tips*/
+
+.menuTips {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 22;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.cuerpoTips {   
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 22; 
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+/*Mediaquery de productos*/
+
+.menuProductos {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.talles{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    align-content: space-between
+}
+
+
+.secProductos {   
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 8;
+    grid-row-end: 23; 
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.productos {
+    display: block;
+    width: 100%;
+    justify-items: center;
+    border: 1px solid red;
+}
+
+    
+}
+
+/* ANIMACIONES */
+
+@keyframes latido {
+
+    0% { 
+        width: 90%;
+        height: 90%;
+
+    }
+    50%{
+        width: 100%;
+        height: 100%;
+
+    }
+    75%{
+        width: 100%;
+        height: 100%;
+
+    }
+    100%{
+        width: 90%;
+        height: 90%;
+
+    }
+}
