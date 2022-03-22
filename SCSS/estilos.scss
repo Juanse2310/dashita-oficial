@@ -1,0 +1,34 @@
+/*map get */
+$galProd: (
+    centro: center,
+    display: block,
+    tamano: 100%,
+    centrado: center,
+    borde: 1px solid red,
+
+
+);
+$galImag: (
+    posicion: relative,
+    disp: block,
+    centro: center,
+    fuera: hidden,
+    tamano: 15px
+
+);
+
+.estilo1 {
+    text-align: map-get($galProd, centro );
+    display: map-get($galProd, display );
+    width: map-get($galProd, tamano );
+    justify-items: map-get($galProd, centrado );
+    border: map-get($galProd, borde );
+}
+.estilo2 {
+    position: map-get($galImag, posicion );
+    display: map-get($galImag, disp);
+    text-align: map-get($galImag, centro );
+    overflow: map-get($galImag, fuera);
+    font-size: map-get($galImag , tamano );
+   
+}

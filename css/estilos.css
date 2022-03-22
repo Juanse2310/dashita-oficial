@@ -1,4 +1,14 @@
-.fotCarru{
+/*map get */
+.estilo1 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  justify-items: center;
+  border: 1px solid red; }
 
-    height: 50px;
-}
+.estilo2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 15px; }
