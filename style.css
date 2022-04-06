@@ -15,16 +15,18 @@ body{
     padding: 0px;
     text-decoration: none;
     font-family: 'Supermercado One', cursive;
+    height:99vh;
 }
 
 .grid-container {
     display: grid;
     background-color: transparent;
     grid-template-columns: 100vw;
-    grid-template-rows: 150px 50px 150px 150px 150px 25px;
+    grid-template-rows: 150px 50px 175px 175px 250px 25px;
     overflow: scroll;
     background-image: url(imagenes/dashita\ fondo.jpg);
     background-size: cover;
+    height:98vh;
 }
 
 header {
@@ -216,10 +218,11 @@ footer {
     width: 100%;
 }
 .redesIcon{
-    font-size: 14px;
+    font-size: 74px;
     color:black;
     display: inline;
     padding: 5px;
+    margin-top: 15px;
 
 }
 
@@ -307,10 +310,10 @@ footer {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    grid-row-start: 5;
-    grid-row-end: 23; 
-    grid-column-start: 2;
-    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 6; 
+    grid-column-start: 1;
+    grid-column-end: 2;
    
    
 }
@@ -379,14 +382,14 @@ footer {
 @media screen and (min-width:600px) {
     .grid-container{
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(24, 25px);
+        grid-template-rows: repeat(24, 1fr);
     }
 
     header {
         grid-column-start: 11;
         grid-column-end: 13;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 4;
         
                 
     }
@@ -394,7 +397,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: 11;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 4;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 0px;
@@ -435,8 +438,8 @@ footer {
     .fotoHome {
         grid-column-start: 1;
         grid-column-end: 8;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -453,8 +456,8 @@ footer {
     .secHome {
         grid-column-start: 8;
         grid-column-end: 13;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         background-color: rgba(128, 128, 128, 0.685);
         border-top-left-radius: 0px;
         border-top-right-radius: 15px;
@@ -479,8 +482,8 @@ footer {
     .mapa{
         grid-column-start: 7;
         grid-column-end: 13;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 0px;
@@ -491,8 +494,8 @@ footer {
     .secDonde{
         grid-column-start: 1;
         grid-column-end: 7;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 0px;
         border-top-left-radius: 15px;
@@ -503,13 +506,15 @@ footer {
         font-weight: 600;  
         justify-content: center;
         align-content: center;
+        
+        
 
     }
   
 
     .dondeTitulo{
        width: 100%;
-       margin-top: 60px;
+       margin-top: 150px;
        margin-bottom: 40px;
       
        
@@ -517,19 +522,35 @@ footer {
     }
     .detalleVehiculos{
         width: 100%;
-        margin-top: 40px;
+        margin-top: 50px;
         margin-bottom: 60px;
+        
         
 
     }
+
+/*Mediaquery talles*/
+
+
+.cuerpoTalles {   
+       
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-row-start: 5;
+    grid-row-end: 24; 
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
 
 /*Mediaquery de contacto*/
 
 .redes {
     grid-column-start: 1;
     grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 22;
+    grid-row-start: 5;
+    grid-row-end: 24;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -541,18 +562,19 @@ footer {
 .secFormulario {   
     grid-column-start: 6;
     grid-column-end: 13;
-    grid-row-start: 6;
-    grid-row-end: 22; 
+    grid-row-start: 5;
+    grid-row-end: 24; 
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+
    
 }
   
 
 .formularioTitulo {
-    font-size: 18px;
+    font-size: 28px;
     color:black;
     display: block;
     justify-content: center;
@@ -567,12 +589,14 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 100px;
 }
 .redesIcon{
-    font-size: 14px;
+    font-size: 84px;
     color:black;
     display: block;
     padding: 5px;
+    margin-top: 10px;
 
 }
 
@@ -685,14 +709,14 @@ footer {
 @media screen and (min-width:1000px) {
     .grid-container{
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(24, 25px);
+        grid-template-rows: repeat(24, 1fr);
     }
 
     header {
         grid-column-start: 12;
         grid-column-end: 13;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 4;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 0px;
@@ -703,7 +727,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: 12;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 4;
         display: flex;
         width: 100%;
         position: relative;    
@@ -764,8 +788,8 @@ footer {
      .secHome {
          grid-column-start: 2;
          grid-column-end: 12;
-         grid-row-start: 6;
-         grid-row-end: 23;
+         grid-row-start: 5;
+         grid-row-end: 24;
          background-image: url(imagenes/dashita\ bolsas.jpg);
          background-size: cover;
          background-repeat: no-repeat;
@@ -793,8 +817,8 @@ footer {
     .mapa{
         grid-column-start: 7;
         grid-column-end: 12;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -805,8 +829,8 @@ footer {
     .secDonde{
         grid-column-start: 2;
         grid-column-end: 7;
-        grid-row-start: 6;
-        grid-row-end: 23;
+        grid-row-start: 5;
+        grid-row-end: 24;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -815,13 +839,31 @@ footer {
         
 
     }
+    /*Mediaquery talles*/
+
+
+.cuerpoTalles {   
+       
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-row-start: 5;
+    grid-row-end: 24; 
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
 
     /*Mediaquery de contacto*/
 
 .redes {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row-start: 6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 5;
     grid-row-end: 10;
     display: inline-block;
     width: 100%;
@@ -832,10 +874,14 @@ footer {
 }
 
 .secFormulario {   
-    grid-column-start: 1;
-    grid-column-end: 13;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-column-start: 2;
+    grid-column-end: 12;
     grid-row-start: 11;
-    grid-row-end: 23; 
+    grid-row-end: 24; 
     display: inline-block;
     width: 100%;
     align-items: center;
@@ -844,7 +890,7 @@ footer {
 }
 
 .formularioTitulo {
-    font-size: 18px;
+    font-size: 38px;
     color:black;
     display: flex;
     justify-content: center;
@@ -862,16 +908,17 @@ footer {
 }
 .redesItems {
     display: inline-flex;
-    
-    justify-content: center;
+    margin-top: 1px;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-left: 20px;
 }
 .redesIcon{
-    font-size: 14px;
+    font-size: 84px;
     color:black;
     display: flex;
-    padding: 5px;
+    padding: 0px;
 
 }
 
