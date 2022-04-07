@@ -66,8 +66,8 @@ nav {
 
 .navegacion {
     display: flex;
-    width: 100%;
-    padding-left: 4px;
+    width: 99%;
+    padding-left: 2px;
     padding-right: 2px;
     align-items: center;
     list-style: none;
@@ -85,8 +85,8 @@ nav {
 }
 .navePag{
     color: white;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 800;
     
 }
 .navePag:hover{
@@ -104,6 +104,10 @@ footer {
     grid-row-start: 6;
     grid-row-end: 7; 
 }
+.pie{
+    font-size: 13px;
+
+}
 
 /*particularidades index*/
 
@@ -116,6 +120,7 @@ footer {
     justify-content: center;
     grid-row-start: 3;
     grid-row-end: 5; 
+    object-fit: cover;
         
 }
 
@@ -377,6 +382,23 @@ footer {
    
    
 }
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    width: 99%;
+    grid-gap:6px;
+    
+}
+.gallery__img{
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   
+}
 
 
 @media screen and (min-width:600px) {
@@ -452,6 +474,7 @@ footer {
         border-bottom-right-radius: 0px;
         border-top-left-radius: 15px;
         border-top-right-radius: 0px;
+        object-fit: cover;
     }
     .secHome {
         grid-column-start: 8;
@@ -701,6 +724,18 @@ footer {
     justify-items: center;
     
 }
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    width: 99%;
+    grid-gap:6px;
+    
+}
+.gallery__img{
+    width: 100%;
+    object-fit: cover;
+}
 
     
 }
@@ -809,9 +844,7 @@ footer {
     
     
     }
-
-
-
+    
     /*Mediaquery de DONDE ESTAMOS*/
 
     .mapa{
@@ -1010,7 +1043,7 @@ footer {
     grid-row-start: 8;
     grid-row-end: 23; 
     display: block;
-    width: 100%;
+    width: 99%;
     align-items: center;
     justify-content: center;
     
@@ -1018,12 +1051,21 @@ footer {
 }
 .productos {
     display: block;
-    width: 100%;
+    width: 99%;
     justify-items: center;
     border: 1px solid red;
 }
-
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    width: 99%;
+    grid-gap:6px;
     
+}
+.gallery__img{
+    width: 100%;
+    object-fit: cover;
 }
 
 /* ANIMACIONES */
