@@ -184,11 +184,13 @@ footer {
 .dondeTitulo{
     width: 100%;
     margin: 0 25% 0 25% ;
+    font-size:18px
 
 }
 .detalleVehiculos{
     width: 100%;
     margin: 5% 25% 0 25% ;
+    font-size:16px;
 
 }
 
@@ -223,7 +225,7 @@ footer {
     width: 100%;
 }
 .redesIcon{
-    font-size: 74px;
+    font-size: 64px;
     color:black;
     display: inline;
     padding: 5px;
@@ -249,14 +251,18 @@ footer {
     grid-row-end: 4;
     display: inline-block;
     width: 100%;
-    justify-content: center;
     background-color: rgba(128, 128, 128, 0.685);
     
     
 }
+.mediosDe{
+    align-items: center;
+    justify-content: center;
+}
 .iconCompras{
     height: 75px;
     width: 75px;
+    justify-content: space-between;
 }
 
 .mediosEnvio {   
@@ -346,7 +352,7 @@ footer {
     list-style: none;
     justify-content: center;
     align-content: space-between;
-    font-size: 16px;
+
     
     
 }
@@ -363,7 +369,7 @@ footer {
 
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 
 }
@@ -381,6 +387,9 @@ footer {
     border-top-right-radius: 15px;
    
    
+}
+.productos{
+font-size: 18px;
 }
 .gallery-container {
     display: grid;
@@ -400,6 +409,7 @@ footer {
    
 }
 
+/* Mediaquery tablet*/
 
 @media screen and (min-width:600px) {
     .grid-container{
@@ -539,6 +549,7 @@ footer {
        width: 100%;
        margin-top: 150px;
        margin-bottom: 40px;
+       font-size:25px;
       
        
 
@@ -547,6 +558,7 @@ footer {
         width: 100%;
         margin-top: 50px;
         margin-bottom: 60px;
+        font-size: 23px;
         
         
 
@@ -612,14 +624,14 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .redesIcon{
-    font-size: 84px;
+    font-size: 74px;
     color:black;
     display: block;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 6px;
 
 }
 
@@ -696,13 +708,17 @@ footer {
     
 
 }
+.nomTalles{
+    font-size:23px;
+}
 .talles{
     display: inline;
     width: 100%;
     align-items: center;
     list-style: none;
     justify-content: center;
-    align-content: space-between
+    align-content: space-between;
+ 
 }
 
 
@@ -722,6 +738,7 @@ footer {
     display: block;
     width: 100%;
     justify-items: center;
+    font-size:23px;
     
 }
 .gallery-container {
@@ -739,7 +756,7 @@ footer {
 
     
 }
-
+/* mediaquery PC*/
 
 @media screen and (min-width:1000px) {
     .grid-container{
@@ -872,6 +889,12 @@ footer {
         
 
     }
+    .dondeTitulo{
+        font-size: 29px;
+    }
+    .detalleVehiculos{
+        font-size:27px;
+    }
     /*Mediaquery talles*/
 
 
@@ -941,7 +964,7 @@ footer {
 }
 .redesItems {
     display: inline-flex;
-    margin-top: 1px;
+    margin-top: -30px;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -1027,13 +1050,17 @@ footer {
     
 
 }
+.nomTalles{
+    font-size:27px;
+}
 .talles{
     display: inline-flex;
     width: 100%;
     align-items: center;
     list-style: none;
     justify-content: center;
-    align-content: space-between
+    align-content: space-between;
+
 }
 
 
@@ -1053,7 +1080,8 @@ footer {
     display: block;
     width: 99%;
     justify-items: center;
-    border: 1px solid red;
+    font-size:27px;
+    
 }
 .gallery-container {
     display: grid;
